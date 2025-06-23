@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			as="style"
+			onload="this.rel='stylesheet'"
+			href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Mohamed's portfolio</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="nav-item">
+					<svg
+						id="logo"
+						width="18px"
+						height="18px"
+						viewBox="0 0 48 48"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
+							fill="currentColor"
+						></path>
+					</svg>
+				</li>
+				<li class="nav-item" id="icon-text"><p>Eng.Mohamed Hussein</p></li>
+				<li class="nav-item" data-target="Projects"><p>Projects</p></li>
+				<li class="nav-item" data-target="certifications">
+					<p>Certificates</p>
+				</li>
+				<li class="nav-item" data-target="contact-section"><p>Contacts</p></li>
+				<li class="nav-item">
+					<svg
+						id="linkedin"
+						width="25px"
+						height="25px"
+						fill="white"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 448 512"
+					>
+						<path
+							d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+						/>
+					</svg>
+				</li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="statisticsVid">
+				<video class="video" autoplay loop muted src="./video.mp4"></video>
+				<div class="text-on-vid">
+					<h1>Eng.Mohamed Hussein</h1>
+					<h4>Data Scientist | Machine Learning Engineer</h4>
+					<div class="buttons">
+						<button class="projects" data-target="Projects">Projects</button>
+						<button class="Resume">Resume</button>
+					</div>
+				</div>
+			</div>
+
+			<section id="Projects">
+				<h2>My Projects</h2>
+				<p>
+					Explore a selection of my data science projects, showcasing my skills
+					in machine learning, data analysis, and visualization. Each project
+					includes a brief description, key technologies used, and links to live
+					demos or code repositories.
+				</p>
+				<div class="carousel-track-container">
+					<div class="project-container">
+						<div class="project" data-page="1">
+							<img
+								src="Screenshot 2025-05-23 112458.png"
+								alt="Diamond Type Analysis"
+							/>
+							<div class="project-content">
+								<h3>Employee Attrition</h3>
+								<p>
+									Exploratory data analysis on employee attrition with
+									classification machine learning model.
+								</p>
+								<a href="Employee Attrition.html" target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+
+						<div class="project" data-page="1">
+							<img
+								src="Screenshot 2025-06-01 125712.png"
+								alt="Diamond Type Analysis"
+							/>
+							<div class="project-content">
+								<h3>Airmiles Capstone</h3>
+								<p>
+									Made a Timeseries forecasting model to predict time trends for
+									airmiles with seasonality.
+								</p>
+								<a href="CAPSTONE_Airmiles.html" target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+
+						<div class="project" data-page="1">
+							<img
+								src="Screenshot 2025-06-14 145710.png"
+								alt="Diamond Type Analysis"
+							/>
+							<div class="project-content">
+								<h3>AI impact on human services</h3>
+								<p>
+									Analyzing the Influence of AI on the Human Services Sector: An
+									Exploratory Data Study.
+								</p>
+								<a href="AI impact on Human services.html" target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+
+						<div class="project" data-page="2">
+							<img src="sales.png" alt="Diamond Type Analysis" />
+							<div class="project-content">
+								<h3>Sales Forecasting</h3>
+								<p>
+									Designed and implemented a sales forecasting model, applying
+									EDA and ML to raw data for accurate sales trend prediction.
+								</p>
+								<a href="Sales Data Sample.html" target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+
+						<div class="project" data-page="2">
+							<img src="Project1.png" alt="Diamond Type Analysis" />
+							<div class="project-content">
+								<h3>Diamond Price Prediction</h3>
+								<p>
+									Exploratory data analysis on Diamond Types using Python and
+									Built a predictive model with 98% accuracy.
+								</p>
+								<a href="Diamond Price Data Set.html" target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+
+						<div class="project" data-page="2">
+							<img
+								src="ChatGPT Image Apr 27, 2025, 10_40_57 PM.png"
+								alt="Accident Data Analysis"
+							/>
+							<div class="project-content">
+								<h3>Car Accident Analysis</h3>
+								<p>Built a Machine Learning Model to Cluster Accident Data.</p>
+								<a href="Car Accidents.html" target="_blank">View Project</a>
+							</div>
+						</div>
+
+						<div class="project" data-page="3">
+							<img src="Screenshot 2025-04-28 001544.png" alt="Project 3" />
+							<div class="project-content">
+								<h3>Data Technology Roles</h3>
+								<p>Exploratory data analysis on Data Job Roles data.</p>
+								<a href="Data Technology Roles.html" target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+
+						<div class="project" data-page="3">
+							<img src="Detection (2).png" alt="Project 3" />
+							<div class="project-content">
+								<h3>Fraud Detection</h3>
+								<p>
+									Machine Learning model predicting that is used for Fraud
+									Detection.
+								</p>
+								<a href="Fraud detection ml.html" target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="progress_steps">
+					<button class="left_arrow" id="prevProjectBtn"><</button>
+					<div class="Circle active" id="projectCircle1" data-page="1">1</div>
+					<div class="Circle" id="projectCircle2" data-page="2">2</div>
+					<div class="Circle" id="projectCircle3" data-page="3">3</div>
+					<button class="right_arrow" id="nextProjectBtn">></button>
+				</div>
+			</section>
+
+			<section id="certifications">
+				<h2>Certifications & Achievements</h2>
+				<div class="certification-container">
+					<div class="certification">
+						<img
+							src="cert-google-data-analytics.png"
+							alt="Google Data Analytics Certification"
+						/>
+						<div class="certification-content">
+							<h3>Google Data Analytics</h3>
+							<a
+								href="https://coursera.org/share/9b38af5645558da9237e6041e7348bc5"
+								target="_blank"
+								>View Certificate</a
+							>
+						</div>
+					</div>
+
+					<div class="certification">
+						<img
+							src="cert-ibm-data-science.jpg"
+							alt="IBM Data Science Professional Certificate"
+						/>
+						<div class="certification-content">
+							<h3>IBM Data Science Professional</h3>
+							<a
+								href="https://coursera.org/share/86a746e68b3db6ad28cb145b944ce1f4"
+								target="_blank"
+								>View Certificate</a
+							>
+						</div>
+					</div>
+
+					<div class="certification">
+						<img
+							src="cert-python-ml.png"
+							alt="Complete Data Science Bootcamp 2025"
+						/>
+						<div class="certification-content">
+							<h3>Data Science Bootcamp 2025</h3>
+							<a
+								href="https://www.udemy.com/certificate/UC-8f4bb7b7-8ef0-4528-91b5-043b4da52f91/"
+								target="_blank"
+								>View Certificate</a
+							>
+						</div>
+					</div>
+
+					<div class="certification">
+						<img src="job.png" alt="British Airways Job Simulation 2025" />
+						<div class="certification-content">
+							<h3>British Airways Job Simulation</h3>
+							<a href="job simulation.pdf" target="_blank">View Certificate</a>
+						</div>
+					</div>
+
+					<div class="certification">
+						<img src="Job2.png" alt="Commonwealth Bank Job Simulation" />
+						<div class="certification-content">
+							<h3>Commonwealth Bank Job Simulation</h3>
+							<a href="Common wealth Bank.pdf" target="_blank"
+								>View Certificate</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="main-footer" id="contact-section">
+			<div class="footer-content">
+				<div class="footer-section about">
+					<h3>About Mohamed Hussein</h3>
+					<p>
+						As a passionate Data Scientist and Machine Learning Engineer based
+						in Mogadishu, Somalia, I specialize in transforming complex data
+						into actionable insights and building intelligent solutions. Explore
+						my projects and certifications to see how I can help your team.
+					</p>
+					<p class="copyright">
+						&copy; <span id="current-year"></span> Mohamed Hussein. All rights
+						reserved.
+					</p>
+				</div>
+
+				<div class="footer-section contact-social">
+					<h3>Connect with Me</h3>
+					<div class="social-icons">
+						<a
+							href="mailto:mohahar2013@gmail.com"
+							target="_blank"
+							aria-label="Email Me on Gmail"
+						>
+							<i class="fas fa-envelope"></i>
+						</a>
+						<a
+							href="https://wa.me/252617007071?text=Hello%20Mohamed%2C%20I%20found%20you%20on%20your%20website!"
+							target="_blank"
+							aria-label="Message me on WhatsApp"
+						>
+							<i class="fab fa-whatsapp"></i>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/mohamed-hussein-63b190213/"
+							target="_blank"
+							aria-label="Visit my LinkedIn profile"
+						>
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a
+							href="https://github.com/mohammedhussein22"
+							target="_blank"
+							aria-label="Visit my GitHub profile"
+						>
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+					<p class="quick-contact">
+						Have a project idea or just want to chat?
+						<a href="mailto:mohahar2013@gmail.com">Send me an email!</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			// JavaScript to dynamically set the current year for the copyright
+			document.getElementById("current-year").textContent =
+				new Date().getFullYear();
+		</script>
+
+		<script src="script.js"></script>
+	</body>
+</html>
