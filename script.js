@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	resumeBtn.onclick = () => {
-		window.open("resume.pdf", "_blank");
+		window.open("Resume.pdf", "_blank");
 	};
 
 	linkedinBtn.onclick = () => {
