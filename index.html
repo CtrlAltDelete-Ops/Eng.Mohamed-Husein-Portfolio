@@ -336,6 +336,15 @@
 		</footer>
 
 		<script>
+			window.va =
+				window.va ||
+				function () {
+					(window.va.q = window.va.q || []).push(arguments);
+				};
+		</script>
+		<script defer src="/_vercel/insights/script.js"></script>
+
+		<script>
 			// JavaScript to dynamically set the current year for the copyright
 			document.getElementById("current-year").textContent =
 				new Date().getFullYear();
