@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		root: null,
 		threshold: 0.1,
 	});
-
 	const itemObserver = new IntersectionObserver(revealOnScroll, {
 		root: null,
 		threshold: 0.05,
@@ -39,11 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	sectionsToReveal.forEach((section) => {
 		sectionObserver.observe(section);
 	});
-
 	individualItemsToReveal.forEach((item) => {
 		itemObserver.observe(item);
 	});
-
 	statisticsVidTextAndButtons.forEach((item) => {
 		itemObserver.observe(item);
 	});
@@ -52,31 +49,25 @@ document.addEventListener("DOMContentLoaded", () => {
 		const targetId = event.currentTarget.dataset.target;
 		const targetSection = document.getElementById(targetId);
 		if (targetSection) {
-			targetSection.scrollIntoView({
-				behavior: "smooth",
-			});
+			targetSection.scrollIntoView({ behavior: "smooth" });
 		}
 	});
 
 	resumeBtn.addEventListener("click", () => {
 		window.open("Resume.pdf", "_blank");
 	});
-
 	linkedinBtn.addEventListener("click", () => {
 		window.open(
 			"https://www.linkedin.com/in/mohamed-hussein-63b190213",
 			"_blank"
 		);
 	});
-
 	navItems.forEach((item) => {
 		item.addEventListener("click", (event) => {
 			const targetId = event.currentTarget.dataset.target;
 			const targetSection = document.getElementById(targetId);
 			if (targetSection) {
-				targetSection.scrollIntoView({
-					behavior: "smooth",
-				});
+				targetSection.scrollIntoView({ behavior: "smooth" });
 			}
 		});
 	});
@@ -99,9 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		projects.forEach((project) => {
 			project.classList.remove("visible");
 		});
-		const projectsToShow = Array.from(projects).filter((project) => {
-			return parseInt(project.dataset.page) === currentPage;
-		});
+		const projectsToShow = Array.from(projects).filter(
+			(project) => parseInt(project.dataset.page) === currentPage
+		);
 		projectsToShow.forEach((project) => {
 			project.classList.add("visible");
 		});
@@ -117,12 +108,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		event.preventDefault();
 		showProjectsForPage(currentPage - 1);
 	});
-
 	nextProjectBtn.addEventListener("click", (event) => {
 		event.preventDefault();
 		showProjectsForPage(currentPage + 1);
 	});
-
 	projectCircles.forEach((circle) => {
 		circle.addEventListener("click", (event) => {
 			event.preventDefault();
